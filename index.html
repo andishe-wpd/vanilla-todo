@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>LETS DO</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+        <div class="col-md-6">
+          <div class="p-4 bg-white notes">
+            <div class="d-flex flex-row align-items-center notes-title">
+              <h4>TO day TO do</h4>
+              <span class="px-2 review-text ml-2 rounded">vital</span>
+            </div>
+            <div
+              class="d-flex flex-row align-items-center align-content-center"
+            >
+              <span class="rounded info" id="datey">NOW: </span
+              ><span class="dot"></span><span class="info ml-1">ML - 1321</span>
+            </div>
+          </div>
+          <div class="p-3 bg-white">
+            <div class="input-group mb-3">
+              <form id="myform" autocomplete="off">
+                <input
+                  id="ourfeild"
+                  type="text"
+                  class="form-control"
+                  placeholder="Today's task"
+                  aria-label="Today's task"
+                  aria-describedby="basic-addon2"
+                />
+                <button
+                  id="btnadd"
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                >
+                  ADD
+                </button>
+              </form>
+            </div>
+
+            <div id="todos"></div>
+          </div>
+          <div class="p-2 bg-white">
+            <h6 class="line-text"><span>Shared with</span></h6>
+          </div>
+          <div class="d-flex justify-content-center p-2 bg-white user-images">
+            <img
+              class="rounded-circle"
+              src="https://i.imgur.com/rQMmlf6.jpg"
+              width="40"
+            /><img
+              class="rounded-circle"
+              src="https://i.imgur.com/zE0TPlF.jpg"
+              width="40"
+            /><img
+              class="rounded-circle"
+              src="https://i.imgur.com/rCAhOXi.jpg"
+              width="40"
+            /><img
+              class="rounded-circle"
+              src="https://i.imgur.com/28GMrS0.jpg"
+              width="40"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
